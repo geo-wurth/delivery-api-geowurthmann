@@ -34,4 +34,4 @@ Sistema de delivery desenvolvido com Spring Boot e Java 21.
 
 ## 👨‍💻 Desenvolvedor
 George - Turma 1
-Desenvolvido com JDK 21 e Spring Boot 3.2.x
+Desenvolvido com JDK 21 e Spring Boot 3.5.3
