@@ -33,5 +33,5 @@ Sistema de delivery desenvolvido com Spring Boot e Java 21.
 - Profile: development
 
 ## 👨‍💻 Desenvolvedor
-George - Turma 1
-Desenvolvido com JDK 21 e Spring Boot 3.5.3
+- **George Wurthmann** - Turma 1
+- Desenvolvido com JDK 21 e Spring Boot 3.5.3
