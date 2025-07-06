@@ -39,8 +39,14 @@ public interface RestauranteRepository extends JpaRepository<Restaurante, Long> 
     // Verificar se restaurante já existe pelo nome
     boolean existsByNome(String nome);
 
+    // Por taxa de entrega menor ou igual
+    List<Restaurante> findByTaxaEntregaLessThanEqual(BigDecimal taxa);
+
+     // Top 5 restaurantes por nome (ordem alfabética)
+    List<Restaurante> findTop5ByOrderByNomeAsc();
+
     // Query customizada - restaurantes com produtos
-    @Query("SELECT DISTINCT r FROM Restaurante r JOIN r.produtos p WHERE r.a􀆟vo = true")
+    @Query("SELECT DISTINCT r FROM Restaurante r JOIN r.produtos p WHERE r.ativo = true")
     List<Restaurante> findRestaurantesComProdutos();
 
     // Buscar por faixa de taxa de entrega
