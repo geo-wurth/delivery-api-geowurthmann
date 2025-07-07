@@ -101,6 +101,14 @@ public class Pedido {
     public void setId(Long id) {
         this.id = id;
     }
+
+    public String getNumeroPedido() {
+        return numeroPedido;
+    }
+    
+    public void setNumeroPedido(String numeroPedido) {
+        this.numeroPedido = numeroPedido;
+    }
     
     public LocalDateTime getDataPedido() {
         return dataPedido;
