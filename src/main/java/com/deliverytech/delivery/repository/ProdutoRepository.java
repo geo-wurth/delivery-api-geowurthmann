@@ -51,8 +51,7 @@ public interface ProdutoRepository extends JpaRepository<Produto, Long> {
     @Query("SELECT DISTINCT p.categoria FROM Produto p WHERE p.ativo = true")
     List<String> findAllCategorias();
 
-    // Buscar produtos por preço efetivo (considerando promoção) menor ou igual a um valor
-    // Considera o preço promocional se estiver ativo, caso contrário, considera o preço normal
+    // Buscar produtos por preço efetivo (considerando promoção) menor
     @Query("SELECT p FROM Produto p WHERE p.ativo = true AND p.disponivel = true AND " +
            "(p.promocao = false OR (p.promocao = true AND p.precoPromocional <= :precoMax)) AND " +
            "(p.promocao = true OR (p.promocao = false AND p.preco <= :precoMax))")
